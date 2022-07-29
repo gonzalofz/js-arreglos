@@ -1,0 +1,275 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: white;
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Monospace", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.54rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+.container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "totales agregar agregar" "totales idTareas idTareas" "totales lista buttons" "totales lista buttons";
+  grid-template-columns: 30% 50% 20%;
+  grid-template-rows: 15% 15% 10% 30% 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  align-content: center;
+  min-height: 95vh;
+  min-width: 70%;
+  box-shadow: 3px 3px 8px black, -3px -3px 8px black;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.card-header {
+  grid-area: titulo;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: black;
+  box-shadow: 3px 3px 8px black, -3px -3px 8px b;
+}
+
+.card-body {
+  grid-area: agregar;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#input-tarea {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  width: 60%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+#input-tarea {
+  outline: none;
+}
+
+#btn-add {
+  box-shadow: inset 0px 1px 0px 0px black;
+  background: linear-gradient(to bottom, black 5%, black 100%);
+  background-color: black;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px black;
+}
+
+#btn-add:hover {
+  background: linear-gradient(to bottom, black 5%, black 100%);
+  background-color: black;
+}
+
+#btn-add:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-delete {
+  box-shadow: inset 0px 1px 0px 0px black;
+  background: linear-gradient(to bottom, black 5%, black 100%);
+  background-color: black;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px black;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(to bottom, black 5%, black 100%);
+  background-color: black;
+}
+
+.btn-delete:active {
+  position: relative;
+  top: 1px;
+}
+
+.card-total {
+  grid-area: totales;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  box-shadow: 0px 0px 8px black, 0px 0px 8px black;
+  overflow: hidden;
+}
+
+.card-jobs-header {
+  grid-area: idTareas;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 2px black, 0px 0px 8px black;
+  overflow: hidden;
+}
+
+.jobs {
+  grid-area: lista;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: black;
+}
+
+.job {
+  display: flex;
+}
+
+.actions {
+  grid-area: buttons;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  color: white;
+}
+
+.action {
+  display: flex;
+}
+
+.checkbox {
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: rgb(241, 245, 248);
+  transition: background 250ms;
+  border: 1px solid rgb(184, 194, 204);
+  border-radius: 0.125rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+#idD {
+  margin-left: 2rem;
+}
+
+#idDD {
+  margin-left: 5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 736px) {
+  h1,
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  #idD {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+  #idDD {
+    font-size: 16px;
+  }
+  .card-total {
+    font-size: 16px;
+  }
+  body {
+    font-size: 10px;
+  }
+  .checkbox {
+    margin: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
